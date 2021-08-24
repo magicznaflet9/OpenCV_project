@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+import time
 
 img = cv2.imread("niebieska_foczka.jpeg")
 imghsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
@@ -17,6 +18,7 @@ while gamma != 99:
     ##print("------res------\n",res)
     imgrgb = cv2.cvtColor(res, cv2.COLOR_HSV2BGR)
     cv2.imshow('New Saturation', imgrgb)
-    cv2.waitKey(0)
+    cv2.waitKey(10)
     gamma = float(input("INPUT GAMMA"))
 print("99")
+cv2.destroyAllWindows()

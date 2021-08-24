@@ -20,4 +20,3 @@ imgrgb = cv2.cvtColor(res, cv2.COLOR_HSV2BGR)
 cv2.imshow('New Saturation', imgrgb)
 
 cv2.waitKey(0)
-
